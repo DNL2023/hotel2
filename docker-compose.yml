@@ -6,5 +6,7 @@ services:
             - '41061:22'
             - '41062:80'
         volumes:
-            - ./source_code:/www
+            - ./source_code:/www/app
+            - ./rest-api:/www/api
+            - ./mysql/data:/mysql/data
         image: 'tomsik68/xampp:8'
