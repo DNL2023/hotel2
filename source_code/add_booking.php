@@ -194,23 +194,5 @@ $("#todate").change(function () {
 });
 </script>--------------------------------- -->
 
------------------------------------------
- <script type="text/javascript">
-    function CompareDate() {
-        var Fromdate = document.getElementById("fromdate").value;
-var ToDate = document.getElementById("todate").value;
-    const date1 = new Date(Fromdate);
-const date2 = new Date(ToDate);
-const diffTime = date2.getTime() - date1.getTime();
-const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-console.log(diffDays);
 
-if(diffDays<0)
-{
-    alert("enter valid date");
-    document.getElementById("todate").value = "";
-}else{
-    alert("valid date")
-} 
-}
-</script>
+
