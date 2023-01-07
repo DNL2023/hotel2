@@ -214,4 +214,3 @@ if(diffDays<0)
 } 
 }
 </script>
-<script type="text/javascript" src="js/general.min.js"></script>
