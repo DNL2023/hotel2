@@ -8,7 +8,7 @@
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
                         <li> <a class="has-arrow  " href="index.php" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard </span></a>
-                        <li> <a class="has-arrow  " href="calendar_fullscreen.php" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Fullscreen Calandar </span></a>
+                        <li> <a class="has-arrow  " href="calendar_fullscreen.php" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Fullscreen Calendar </span></a>
                         <li> <a class="has-arrow  " href="cleaning.php" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Room Cleaning </span></a>
 
                         </li>
