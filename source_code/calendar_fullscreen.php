@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
               },
             editable: true,
             resourceAreaHeaderContent: 'Rooms',
-            resources: 'rest_api.php',
-            events: 'rest_api.php'
+             resources: 'rest_api.php',
+            events: 'rest_api.php?path=events' // <-- you forget this
         });
 
         calendar.render();

@@ -41,7 +41,7 @@ if(isset($_GET['id']))
                 <!-- /# row -->
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Overviews</h4>
+                                <h4 class="card-title">Overview</h4>
                                
                                 <div class="table-responsive m-t-40">
                                     <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">

@@ -27,7 +27,7 @@
 
     document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
-
+        
         var calendar = new FullCalendar.Calendar(calendarEl, {
             schedulerLicenseKey: 'GPL-My-Project-Is-Open-Source',
             timeZone: 'UTC',
@@ -40,8 +40,9 @@
             },
             editable: true,
             resourceAreaHeaderContent: 'Rooms',
-            resources: 'https://fullcalendar.io/api/demo-feeds/resources.json?with-nesting&with-colors',
-            events: 'https://fullcalendar.io/api/demo-feeds/events.json?single-day&for-resource-timeline'
+            resources: 'rest_api.php',
+            events: 'rest_api.php'
+           
         });
 
         calendar.render();
