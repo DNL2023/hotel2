@@ -101,15 +101,14 @@ require_once 'connect.php';
 function getAllEvents($start, $end) {
     global $conn; // allow using global (variable is resource that outside this function) variable
 
-    $sql = $conn->query("SELECT tbl_booking.*, tbl_rooms.roomname AS rname FROM `tbl_booking` JOIN tbl_rooms ON tbl_rooms.id = tbl_booking.roomname WHERE tbl_booking.fromdate >= '$end' AND tbl_booking.todate <= '$start'");
+    $sql = $conn->query("SELECT tbl_booking.*, tbl_customer.name as customer_name, tbl_rooms.roomname AS rname FROM `tbl_booking` JOIN tbl_rooms ON tbl_rooms.id = tbl_booking.roomname JOIN tbl_customer ON tbl_customer.id = tbl_booking.name WHERE tbl_booking.todate >= '".$start."' OR tbl_booking.fromdate <= '".$end."'");
     $data = $sql->fetch_all(MYSQLI_ASSOC);
-    var_dump($data);
 
     $collector = [];
     if (sizeof($data) > 0) {
         foreach ($data as $item) {
             array_push($collector, [
-                'title' => $item['rname'],
+                'title' => $item['customer_name'] . ' - Booking for  -' . $item['rname'],
                 'start' => $item['fromdate'],
                 'end' => $item['todate']
             ]);

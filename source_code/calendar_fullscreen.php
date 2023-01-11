@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             schedulerLicenseKey: 'GPL-My-Project-Is-Open-Source',
             locale: 'en',
             timeZone: 'UTC',
-            initialView: 'resourceTimelineDay',
+            initialView: 'dayGridWeek',
             headerToolbar: {
                 left: 'prev,next',
                 center: 'title',
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
               },
             editable: true,
             resourceAreaHeaderContent: 'Rooms',
-             resources: 'rest_api.php',
+            resources: 'rest_api.php?path=events',
             events: 'rest_api.php?path=events' // <-- you forget this
         });
 
