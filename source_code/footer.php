@@ -1,5 +1,5 @@
    <!-- footer -->
-            <footer class="footer"></footer>
+            <footer class="footer">for testing and learning purposes</footer>
             <!-- End footer -->
         </div>
         <!-- End Page wrapper  -->
