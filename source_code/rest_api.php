@@ -108,7 +108,7 @@ function getAllEvents($start, $end) {
     if (sizeof($data) > 0) {
         foreach ($data as $item) {
             array_push($collector, [
-                'title' => $item['customer_name'] . ' - Booking for  -' . $item['rname'],
+                'title' => $item['customer_name'] . ' -   -' . $item['rname'],
                 'start' => $item['fromdate'],
                 'end' => $item['todate']
             ]);

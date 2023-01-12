@@ -10,11 +10,11 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">About Author</h3> </div>
+                    <h3 class="text-primary">Feature requests</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">About Author</li>
+                        <li class="breadcrumb-item active"></li>
                     </ol>
                 </div>
             </div>
@@ -28,18 +28,12 @@
                     <div class="col-lg-8" style="    margin-left: 10%;">
                         <div class="card">
                             <div class="card-title">
-                              <b>Name :</b> Nikhil Bhalerao
+                              <b>
                               <br><br>
-                              <b>Experty in</b> : PHP, Codeignitor, Laravel.
                               <br><br>
-                              <b>work Exprience</b> : 5 Years 8 months.
                               <br><br>
-                             
-                             <b> Facebook :</b> <a href="https://cutt.ly/wefzDNI">CLick here to Like Page</a>
-                              <br>         <br>
-                              <b>Yotube Channel :</b> <a href="https://cutt.ly/vefl69a">Click here to subscribe Youtube Channel</a>
                               <br><br>
- <b>                           <font size="3" color="red">  appreciate my work by subscribing and liking my Youtube Channel, It will motivate me to Post more source code on this website.</b></font>
+                              <br><br>
                             </div>
                             <div class="card-body">
                               

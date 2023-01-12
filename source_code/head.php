@@ -31,7 +31,7 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
             schedulerLicenseKey: 'GPL-My-Project-Is-Open-Source',
             timeZone: 'UTC',
-            initialView: 'resourceTimelineDay',
+            initialView: 'resourceTimeline',
             aspectRatio: 1.5,
             headerToolbar: {
                 left: 'prev,next',
@@ -41,7 +41,7 @@
             editable: true,
             resourceAreaHeaderContent: 'Rooms',
             resources: 'rest_api.php',
-            events: 'rest_api.php'
+            events: 'rest_api.php?path=events' // <-- you forget this
            
         });
 

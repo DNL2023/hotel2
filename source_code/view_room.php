@@ -53,6 +53,9 @@ if(isset($_GET['id']))
                                                 <th>Per Adult Price</th>
                                                 <th>Per kid Price</th>
                                                 <th>Color</th>
+                                                <th>Bed(s)</th>
+                                                <th>Shower</th>
+                                                <th>Comments</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -64,6 +67,9 @@ if(isset($_GET['id']))
                                                 <th>Per Adult Price</th>
                                                 <th>Per kid Price</th>
                                                 <th>Color</th>
+                                                <th>Bed(s)</th>
+                                                <th>Shower</th>
+                                                <th>Comments</th>
                                                 <th>Action</th>
                                             </tr>
                                         </tfoot>
@@ -82,7 +88,10 @@ if(isset($_GET['id']))
                                                 <td><?php echo $row['roomname']; ?></td>
                                                 <td><?php echo $row['peradultprice']; ?></td>
                                                 <td><?php echo $row['perkidprice']; ?></td>
-                                                 <td><?php echo $row['color']; ?></td>
+                                                <td><?php echo $row['color']; ?></td>
+                                                <td><?php echo $row['bed']; ?></td>
+                                                <td><?php echo $row['shower']; ?></td>
+                                                <td><?php echo $row['comments']; ?></td>
                                                 <td>
                                                   <a href="edit_room.php?id=<?=$row['id'];?>" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i></a>
                                                   <a href="view_room.php?id=<?=$row['id'];?>" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>

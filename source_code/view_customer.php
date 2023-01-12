@@ -56,6 +56,7 @@ if(isset($_GET['id']))
                                                 <th>Birth Date</th>
                                                 <th>Contact No.</th>
                                                <th>Address</th>
+                                               <th>Comments</th>
                                                <th>Action</th>
                                             </tr>
                                         </thead>
@@ -68,6 +69,7 @@ if(isset($_GET['id']))
                                                 <th>Birth Date</th>
                                                 <th>Contact No.</th>
                                                <th>Address</th>
+                                               <th>Comments</th>
                                                <th>Action</th>
                                             </tr>
                                         </tfoot>
@@ -88,6 +90,7 @@ if(isset($_GET['id']))
                                                 <td><?php echo $row['birthdate']; ?></td>
                                                 <td><?php echo $row['contact']; ?></td>
                                                 <td><?php echo $row['address']; ?></td>
+                                                <td><?php echo $row['comments']; ?></td>
                                                 <td>
                                                   <a href="edit_customer.php?id=<?=$row['id'];?>"class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i></a>
                                                   <a href="view_customer.php?id=<?=$row['id'];?>" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>

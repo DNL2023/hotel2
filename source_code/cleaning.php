@@ -14,7 +14,7 @@ if(isset($_GET['id']))
     </h1>
     <p>Report room as clean</p>
     <p>
-      <a href="del_room.php?id=<?php echo $_GET['id']; ?>" class="button button--success" data-for="js_success-popup">Yes</a>
+      <a href="cleaning.php?id=<?php echo $_GET['id']; ?>" class="button button--success" data-for="js_success-popup">Yes</a>
       <a href="cleaning.php" class="button button--error" data-for="js_success-popup">No</a>
     </p>
   </div>
@@ -51,6 +51,7 @@ if(isset($_GET['id']))
                                                 <th>Floor No</th>
                                                 <th>Room Name</th>
                                                 <th>Color</th>
+                                                <th>comments</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -59,8 +60,8 @@ if(isset($_GET['id']))
                                                 <th>Sr.No.</th>
                                                 <th>Floor No</th>
                                                 <th>Room Name</th>
-
                                                 <th>Color</th>
+                                                <th>comments</th>
                                                 <th>Action</th>
                                             </tr>
                                         </tfoot>
@@ -71,15 +72,15 @@ if(isset($_GET['id']))
                                      $result = $conn->query($sql);
                                   $i=1;
                                    while($row = $result->fetch_assoc()) { 
-                               
                                       ?>
                                             <tr>
                                                 <td><?php echo $i;?></td>
                                                 <td><?php echo $row['floorno']; ?></td>
                                                 <td><?php echo $row['roomname']; ?></td>
                                                  <td><?php echo $row['color']; ?></td>
+                                                 <td><?php echo $row['comments']; ?></td>
                                                 <td>
-                                                  <a href="cleaning.php?id=<?=$row['id'];?>" class="btn btn-xs btn-danger"><i class="fa-light fa-clean"></i></a>
+                                                <a href="cleaning.php?id=<?=$row['id'];?>" class="btn btn-xs btn-danger"><i class="fa-light fa-clean"></i></a>
                                                 </td>
                                             </tr>
                                           <?php  $i++;} 

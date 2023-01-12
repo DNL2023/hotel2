@@ -10,7 +10,7 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Dashboard</h3> </div>
+                    <h3 class="text-primary">Add Room</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
@@ -42,12 +42,12 @@
                                             <div class="col-lg-6">
                                                 <select class="form-control" id="val-skill" name="roomname" required="">
                                                     <option value="">Please select</option>
-                                                    <option value="Deluxe">Deluxe</option>
-                                                    <option value="Superior">Superior</option>
-                                                    <option value="Single">Single</option>
-                                                    <option value="Double">Double</option>
-                                                    <option value="Triple">Triple</option>
-                                                    <option value="Quad">Quad</option>
+                                                    <option value="0.14">0.14</option>
+                                                    <option value="1.11">1.11</option>
+                                                    <option value="1.01">1.01</option>
+                                                    <option value="1.03">1.03</option>
+                                                    <option value="1.04">1.04</option>
+                                                    <option value="Quad">Single</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -55,19 +55,19 @@
                                       <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-digits">Per Adult Price : <span class="text-danger">*</span></label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="val-digits" name="peradultprice" placeholder="Per Adult Price " minlength="3" maxlength="4" required="">
+                                                <input type="text" class="form-control" id="val-digits" name="peradultprice" placeholder="Per Adult Price " minlength="1" maxlength="4" required="">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-digits">Per Kid Price : <span class="text-danger">*</span></label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="val-digits" name="perkidprice" placeholder="Per Kid Price" minlength="3" maxlength="4" required="">
+                                                <input type="text" class="form-control" id="val-digits" name="perkidprice" placeholder="Per Kid Price" minlength="1" maxlength="4" required="">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-digits">Amenities: <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="val-digits">Amenities: <span class="text-danger"></span></label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="val-digits" name="color" placeholder="Amenities" required="">
+                                                <input type="text" class="form-control" id="val-digits" name="color" placeholder="Amenities">
                                             </div>
                                         </div>
                                         

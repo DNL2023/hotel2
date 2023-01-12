@@ -11,7 +11,7 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Dashboard</h3> </div>
+                    <h3 class="text-primary">Add Customer</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
@@ -54,9 +54,9 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-currency">Birthdate<span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="val-currency">Birthdate<span class="text-danger"></span></label>
                                             <div class="col-lg-6">
-                                                <input type="date" class="form-control" id="val-currency" name="birthdate" placeholder="birthdate" required="">`
+                                                <input type="date" class="form-control" id="val-currency" name="birthdate" placeholder="birthdate" >
                                             </div>
                                         </div>
                                        
@@ -72,7 +72,12 @@
                                                 <input type="text" class="form-control" id="val-digits" name="address" placeholder="" required="">
                                             </div>
                                         </div>
-                                        
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-digits">Comments<span class="text-danger"></span></label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-digits" name="comments" placeholder="">
+                                            </div>
+                                        </div>                                       
                                         
                                         <div class="form-group row">
                                             <div class="col-lg-8 ml-auto">

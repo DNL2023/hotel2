@@ -8,8 +8,8 @@
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
                         <li> <a class="has-arrow  " href="index.php" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard </span></a>
-                        <li> <a class="has-arrow  " href="calendar_fullscreen.php" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Fullscreen Calendar </span></a>
-                        <li> <a class="has-arrow  " href="cleaning.php" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Room Cleaning </span></a>
+                        <li> <a class="has-arrow  " href="calendar_fullscreen.php" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Fullscreen Calendar </span></a>
+                        <li> <a class="has-arrow  " href="cleaning.php" aria-expanded="false"><i class="fa fa-trash"></i><span class="hide-menu">Room Cleaning </span></a>
 
                         </li>
 
@@ -70,7 +70,7 @@
                             </ul>
                         </li>
 
-                        <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-cog"></i><span class="hide-menu">Setting</span></a>
+                        <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-cog"></i><span class="hide-menu">Settings</span></a>
                             <ul aria-expanded="false" class="collapse">
                                <?php //if($_SESSION["username"]=='user' || $_SESSION["username"]=='admin') { ?>
                                <li><a href="manage_website.php">Appearance Management</a></li>
@@ -80,7 +80,7 @@
                               
                             </ul>
                         </li> 
-                        <li> <a class="has-arrow" href="about.php" aria-expanded="false"><i class="fa fa-info-circle"></i><span class="hide-menu">About Author</span></a>
+                        <li> <a class="has-arrow" href="about.php" aria-expanded="false"><i class="fa fa-info-circle"></i><span class="hide-menu">Feature requests</span></a>
                           
                            
                         </li> 

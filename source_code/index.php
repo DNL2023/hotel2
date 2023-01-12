@@ -40,7 +40,7 @@
                                 $res = $conn->query($sql);
                                 $row=mysqli_fetch_array($res);?> 
                                     <h2 class="color-black"><?php echo $row[0];?></h2>
-                                    <p class="m-b-0">Total rooms</p>
+                                    <p class="m-b-0">rooms</p>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                                 $res = $conn->query($sql);
                                 $row=mysqli_fetch_array($res);?> 
                                     <h2 class="color-black"><?php echo $row[0];?></h2>
-                                    <p class="m-b-0">total customers</p>
+                                    <p class="m-b-0">customers</p>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                                 $res = $conn->query($sql);
                                 $row=mysqli_fetch_array($res);?> 
                                     <h2 class="color-black"><?php echo $row[0];?></h2>
-                                    <p class="m-b-0">total bookings</p>
+                                    <p class="m-b-0">bookings</p>
                                 </div>
                             </div>
                         </div>

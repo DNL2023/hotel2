@@ -10,7 +10,7 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Dashboard</h3> </div>
+                    <h3 class="text-primary">Add Booking</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
@@ -47,17 +47,21 @@
                                                                     </option>
                                                                     <?php
                                                                 }
-                                                            } else {
-                                                            echo "0 results";
+                                                            } else { 
+                                                            echo "0 results";                                                           
                                                                 }
                                                             ?>
+                                                            <option value="">--Add new customer--</option> 
+                                                         <? // popup with form of add_customer.php here ?>
                                                 </select>
                                             </div>
                                         </div>
 
                                          <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-skill">Room Name:<span class="text-danger">*</span></label>
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-6"> 
+                                                
+                                            <form>
                                                 <select class="form-control" id="val-skill" name="roomname" required=""  onchange="calculate();" onkeyup="calculate();">
                                                     <option value="">--Select Room--</option>
                                                     <?php  

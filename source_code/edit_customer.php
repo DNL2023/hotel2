@@ -22,7 +22,7 @@ if(isset($_POST["submit"]))
       $msg = "Failed to upload image";
     }*/
    
-      $q1="UPDATE `tbl_customer` SET `name`='$name',`email`='$email',`gender`='$gender',`birthdate`='$birthdate',`contact`='$contact',`address`='$address' WHERE `id`='".$_GET['id']."'";
+      $q1="UPDATE `tbl_customer` SET `name`='$name',`email`='$email',`gender`='$gender',`birthdate`='$birthdate',`contact`='$contact',`address`='$address',`comments`='$comments' WHERE `id`='".$_GET['id']."'";
     //$q2=$conn->query($q1);
     if ($conn->query($q1) === TRUE) {
       $_SESSION['success']=' Record Successfully Updated';
@@ -54,6 +54,7 @@ $gender = $row['gender'];
 $birthdate = $row['birthdate'];
 $contact = $row['contact'];
 $address = $row['address'];
+$comments = $row['comments'];
 }
 
 ?> 
@@ -112,9 +113,9 @@ $address = $row['address'];
                                         </div>
                                        
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-phoneus">Contact<span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="val-phoneus">Contact<span class="text-danger"></span></label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="val-phoneus" name="contact" value="<?php echo $contact; ?>" minlength="10" maxlength="10" pattern="^[0][1-9]\d{9}$|^[1-9]\d{9}$" required="">
+                                                <input type="text" class="form-control" id="val-phoneus" name="contact" value="<?php echo $contact; ?>">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -123,7 +124,12 @@ $address = $row['address'];
                                                 <input type="text" class="form-control" id="val-digits" name="address" value="<?php echo $address;?>" required="">
                                             </div>
                                         </div>
-                                        
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-digits">Comments<span class="text-danger">*</span></label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-digits" name="comments" value="<?php echo $comments;?>">
+                                            </div>
+                                        </div>
                                         
                                         <div class="form-group row">
                                             <div class="col-lg-8 ml-auto">
