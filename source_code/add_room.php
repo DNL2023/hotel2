@@ -42,12 +42,12 @@
                                             <div class="col-lg-6">
                                                 <select class="form-control" id="val-skill" name="roomname" required="">
                                                     <option value="">Please select</option>
-                                                    <option value="0.14">0.14</option>
-                                                    <option value="1.11">1.11</option>
+                                                    <option value="0.1">0.1</option>
+                                                    <option value="1.00">1.00</option>
                                                     <option value="1.01">1.01</option>
                                                     <option value="1.03">1.03</option>
                                                     <option value="1.04">1.04</option>
-                                                    <option value="Quad">Single</option>
+                                                    <option value="Quad">Quad</option>
                                                 </select>
                                             </div>
                                         </div>
