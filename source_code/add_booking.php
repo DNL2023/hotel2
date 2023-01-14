@@ -3,7 +3,22 @@
 
 <?php include('header.php');?>
 <?php include('sidebar.php');?>
- <?php include('connect.php');?>
+<?php include('connect.php');?>
+
+
+<script type="text/javascript">
+        var selectCustomer = document.getElementById('--Select Customer--')
+        var logContainer = document.getElementById('name')
+
+        selectCustomer.addEventListener('change', (e) => {
+            if (e.target.value === '--Add new customer--') {
+                logContainer.innerHTML = `Redirect to ${e.target.value}`
+                 window.location.href = 'index.php'
+
+            }
+        })
+    </script>
+
 
         <!-- Page wrapper  -->
 <div class="page-wrapper">
@@ -52,8 +67,9 @@
                                                                 }
                                                             ?>
                                                             <option value="">--Add new customer--</option> 
-                                                         <? // popup with form of add_customer.php here ?>
+
                                                 </select>
+
                                             </div>
                                         </div>
 

@@ -240,4 +240,5 @@ Array.from(document.querySelectorAll('button[data-for]')).
 forEach(addButtonTrigger);
     </script>
 </body>
+
 </html>

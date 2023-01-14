@@ -29,7 +29,7 @@
         var calendarEl = document.getElementById('calendar');
         
         var calendar = new FullCalendar.Calendar(calendarEl, {
-            schedulerLicenseKey: 'GPL-My-Project-Is-Open-Source',
+            schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
             timeZone: 'UTC',
             initialView: 'resourceTimeline',
             aspectRatio: 1.5,
@@ -40,7 +40,7 @@
             },
             editable: true,
             resourceAreaHeaderContent: 'Rooms',
-            resources: 'rest_api.php',
+            resources: 'rest_api.php?path=resources',
             events: 'rest_api.php?path=events' // <-- you forget this
            
         });
