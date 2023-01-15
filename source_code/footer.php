@@ -47,7 +47,7 @@
            // check if target value is adding_new_customer
            if (e.target.value === 'adding_new_customer') {
             //    alert('Yes the target is adding new customer')
-            window.location.href = 'http://192.168.178.54:41062/www/app/add_customer.php'
+            window.location.href = 'add_customer.php'
            }
        })
    </script>

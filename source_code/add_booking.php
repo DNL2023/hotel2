@@ -134,7 +134,12 @@
                                         </select>
                                     </div>
                                 </div>
-
+                                <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label" for="val-digits">Comments<span class="text-danger"></span></label>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" id="val-digits" name="comments" placeholder="">
+                                    </div>
+                                </div>         
                                 <!-- <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-digits">Total Amount<span class="text-danger">*</span></label>
                                             <div class="col-lg-6">
